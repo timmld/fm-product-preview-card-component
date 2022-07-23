@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Fraunces";
+    src: url("./assets/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+} 
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    width: 560px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.product-img-desktop {
+    width: 280px;
+}
+
+.product-img-mobile {
+    display: none;
+}
+
+.content {
+    padding: 30px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    margin: 0;
+}
+
+h1 {
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 2.1rem;
+    color: hsl(212, 21%, 14%);
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.price-discount {
+    margin-right: 1rem;
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+.price-base {
+    text-decoration: line-through;
+    vertical-align: super;
+}
+
+a {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+    background-color: hsl(158, 36%, 37%);
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    color: hsl(0, 0%, 100%);
+    line-height: 3rem;
+}
+
+a img {
+    vertical-align: sub;
+    margin-right: 1rem;
+}
+
+a:active {
+    background-color: hsl(159, 35%, 22%);
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: 350px;
+        flex-direction: column;
+    }
+    
+    .product-img-desktop {
+        display: none;
+    }
+    
+    .product-img-mobile {
+        display: block;
+        width: 350px;
+    }
+}
